@@ -110,3 +110,103 @@ button{
 }
 
 button:hover {background-color: #bb9a2e}
+
+#identidad{
+    background-color: chartreuse;
+}
+
+#resultado{
+background-color: palevioletred;
+width: 200px;
+inset-block: 453px;
+position: relative;
+top: 0em;
+padding: 30px;
+}
+
+ /* Aqui inicia Galeria */
+
+ .galeria{
+     width: 90%;
+     margin: auto;
+     list-style: none;
+     padding: 20 px;
+     box-sizing: border-box;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+
+ }
+
+ .galeria li{
+     margin: 5px;
+ }
+
+ .galeria img{
+     width: 150px;
+     height: 160px;
+ }
+
+  /* Estilos del modal */
+  .modal{
+      visibility: hidden;
+      opacity: 0;
+  }
+  .modal:target{
+      visibility: visible;
+      opacity: 1;
+      position: fixed;
+      background: rgba(0, 0, 0, 0.6);
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+  }
+
+  .modal h3{
+      text-align: center;
+      margin: 15px 0;
+      color: white;
+      font-size: 30px;
+  }
+
+  .image{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image a{
+      color: white;
+      font-size: 40px;
+      text-decoration: none;
+      margin: 0 16px;
+  }
+
+  .image a:nth-child(2){
+      margin: 0px;
+      height: 100%;
+      flex-shrink: 2;
+  }
+
+  .image img{
+     width: 300px; 
+     height: 70%;
+     max-width: 100%;
+     border: 7px solid white;
+     box-sizing: border-box;
+  }
+
+  .close{
+      display: block;
+      width: 40px;
+      height: 40px;
+      border-radius: 50px;
+      margin: auto;
+      text-align: center;
+      color: #000;
+      position: absolute;
+      top: 520px;
+  }

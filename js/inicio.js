@@ -1,3 +1,7 @@
+window.onload= function ocultar1(){
+    document.getElementById("resultado").style.display="none";
+   }
+   
 var getData = function () {
 var nombre= document.getElementById("nombre").value;
 var edad= document.getElementById("edad").value;
@@ -16,7 +20,15 @@ var sexre = function() {
 
 var cualquierCosa= sexre();
 
-console.log(mayusTres+edad+coment+cualquierCosa);
+document.getElementById("result").innerHTML= mayusTres+edad+cualquierCosa;
+document.getElementById("coment").innerHTML= coment;
 }
 
+function ocultar(){
+    document.getElementById("formulario").style.display="none";
+   }
 
+   function mostrar(){
+    document.getElementById("resultado").style.display="block";
+   }
+//Aqui inicia js de Galeria

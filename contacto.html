@@ -10,7 +10,7 @@
         </head>
         <body>
             <header>
-                <h1>Contacto</h1>
+                <h1>Registro</h1>
             </header>
 
             <Nav>
@@ -18,7 +18,7 @@
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="mercancia.html">Catálogo</a></li>
                     <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="contacto.html">Registro</a></li>
                 </ul>
             </Nav>
             <img src="imagenes/tomateform.png" id="tomateForm">
@@ -30,7 +30,14 @@
                 Mujer: <input type="radio" name="sexo" id="mujer" value="mujer"><br>
                 Comentarios:<br><textarea rows="10" cols="30" name="comentarios" id="comentarios"
                 ></textarea> <br>
-                <button type="button" onclick="getData()">Enviar</button>
+                <button type="button" onclick="getData();mostrar();ocultar()">Enviar</button>
             </form>
+
+            <section id="resultado">
+                <h2>Felicidades tu ID es:</h2>
+                <p id="result"> </p> 
+                <h2>Comentario:</h2>
+                <p id="coment"> </p>
+            </section>
         </body>
 </html>
